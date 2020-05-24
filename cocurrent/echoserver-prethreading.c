@@ -2,7 +2,7 @@
 
 #define NUM_THREADS 4
 #define SBUF_SIZE 16
-// a double-end array queue
+// an array queue
 // interestingly, using PV we don't have to manage the state of
 // empty or full, it will suspend and wait for insert or remove
 // but we can't insert and remove on the same thread, it may cause dead-lock.
